@@ -24,7 +24,7 @@ def user_input(products):
 	return products
 
 # 印出所有
-def ptint_products(products):
+def print_products(products):
 	for p in products:
 		print(p[0], '的價格是', p[1])
 
@@ -45,7 +45,7 @@ def main():
 		print('找不到檔案....')
 
 	products = user_input(products)
-	ptint_products(products)
+	print_products(products)
 	write_file('products.csv', products)
 
 main()
